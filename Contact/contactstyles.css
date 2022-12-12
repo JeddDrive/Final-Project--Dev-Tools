@@ -1,0 +1,272 @@
+body {
+    background-color: #E7ECEF;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ID for the main header that contains the h1 heading text. */
+#header {
+    width: auto;
+    text-align: center;
+    padding: 1.6%;
+    font-size: 130%;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    font-family: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ID for the introductory paragraph. */
+#introParagraph {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 140%;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #c4c2c2;
+    font-weight: 500;
+}
+
+/* ID to override/customize bootstrap navbar properties */
+#myNavbar {
+    background-color: #bababa;
+    font-weight: bold;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+/* ID for the navbar image (a winter fox) */
+#myNavbarImage {
+    display: inline-block;
+    width: 6rem;
+    height: 4rem;
+    border-radius: 0.4rem;
+}
+
+/* Overriding bootstrap's btn properties */
+.btn {
+    background-color: #64bab3;
+    color: #ffffff;
+    border-radius: 0.8rem;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1.15rem;
+    display: flex;
+    margin: 0 auto;
+    font-weight: 500;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+/* When hovering over buttons */
+.btn:hover {
+    background-color: #274C77;
+    transition: all 0.3s 0.1s;
+    transition-timing-function: ease-in-out;
+    color: #e1e1e1;
+    box-shadow: 0 0.5em 0.5em -0.3em #95c5ff;
+    transform: translateY(-0.25em);
+}
+
+/* When hovering over the active navbar link */
+.nav-link.active:hover {
+    background-color: #6dc6de;
+    color: black;
+    transition: all 0.2s 0.2s;
+    transition-timing-function: ease-in-out;
+    border-radius: 0.7rem;
+}
+
+form:first-child {
+    margin-top: 1.3rem;
+}
+
+/* Class for footer and two IDs for the footer. */
+.footer {
+    width: 100%;
+    padding: 0.7%;
+    margin-bottom: 0em;
+    margin-top: 10%;
+    float: right;
+    background-color: #bababa;
+    color: #2f2f2f;
+    font-weight: 500;
+}
+
+/* Media Query for under 768px */
+@media only screen and (max-width: 768px) {
+    #myNavbarImage {
+        width: 4.5rem;
+        height: 3rem;
+    }
+
+    .nav-link {
+        padding-left: 0.5rem;
+    }
+
+    .card {
+        margin-left: 1.4rem;
+        margin-right: 1.4rem;
+    }
+
+    .btn {
+        font-size: 90%;
+    }
+
+    #myCard1 {
+        margin-top: 0.5rem;
+    }
+
+    .form-control {
+        font-size: 80%;
+    }
+
+    .form-select {
+        font-size: 80%;
+    }
+}
+
+/* Media Query for under 576px */
+@media only screen and (max-width: 576px) {
+
+    .btn {
+        font-size: 75%;
+    }
+
+    #introParagraph {
+        font-size: 95%;
+    }
+
+    .card-title {
+        font-size: 98%;
+    }
+
+    .card-text {
+        font-size: 88%;
+    }
+}
+
+/* Media Query for over 768px */
+@media only screen and (min-width: 768px) {
+    #myCard1 {
+        margin-top: 0.8rem;
+    }
+
+    #myCard2 {
+        margin-top: 0.8rem;
+    }
+
+    .carousel {
+        width: 50%;
+        height: 50%;
+        margin: 0 auto;
+    }
+
+    .footer {
+        margin-top: 5rem;
+    }
+}
+
+/* Media Query for over 992px */
+@media only screen and (min-width: 992px) {
+    .card-title {
+        font-size: 170%;
+    }
+
+    .nav-link {
+        font-size: 115%;
+    }
+
+    #introParagraph {
+        margin-top: 1.5rem;
+    }
+
+    .footer {
+        font-size: 110%;
+    }
+
+    .btn {
+        font-size: 110%;
+    }
+
+    .form-control {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .form-select {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .form-control {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .form-select {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+/* Class for the navbar links */
+.nav-link {
+    border-radius: 0.7rem;
+}
+
+/* When hovering over the navbar links. */
+.nav-link:hover {
+    background-color: #274C77;
+    color: #ffffff;
+    transition: all 0.2s 0.2s;
+    transition-timing-function: ease-in-out;
+    border-radius: 0.7rem;
+}
+
+#footerFloatLeft {
+    float: left;
+    margin-left: 1%;
+}
+
+#footerFloatRight {
+    float: right;
+    margin-right: 1%;
+}
+
+/* Class for all of the cards */
+.card {
+    border-radius: 0.6rem;
+    background-color: #4874ab;
+    color: #ffffff
+}
+
+/* Class for the carousel inner images */
+.carousel-inner {
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    margin-top: 3.5rem;
+}
+
+/* ID for the first carousel indicator */
+#indicatorOne {
+    background-color: #64bab3;
+    padding: 0.12rem;
+    border-radius: 0.8rem;
+}
+
+/* ID for the second carousel indicator */
+#indicatorTwo {
+    background-color: #64bab3;
+    padding: 0.12rem;
+    border-radius: 0.8rem;
+}
+
+/* ID for the third carousel indicator */
+#indicatorThree {
+    background-color: #64bab3;
+    padding: 0.12rem;
+    border-radius: 0.8rem;
+}
