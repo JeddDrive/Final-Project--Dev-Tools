@@ -57,6 +57,35 @@
         </div>
         <!-- Fluid container - meaning 100% width at all breakpoints -->
         <div class="container-fluid">
+                    <!-- Start of form element -->
+            <form action="">
+                <!-- Div for e-mail input -->
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control" placeholder="Your e-mail address, so I can contact you back"
+                        aria-label="Enter email" required minlength="6">
+                </div>
+                <!-- Div for first name input -->
+                <div class="input-group mb-4">
+                    <input type="text" class="form-control" placeholder="Your first name" aria-label="Enter first name"
+                        required>
+                </div>
+                <!-- Div for dropdown list input -->
+                <div class="input-group mb-4">
+                    <select class="form-select" aria-label="Dropdown list with a few options">
+                        <option selected>What type of question or inquiry is this?</option>
+                        <option value="Technical Issue">Website Technical Issue</option>
+                        <option value="Content">Website Content</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <!-- Div for textarea input -->
+                <div class="input-group mb-4">
+                    <textarea class="form-control" placeholder="Please enter your question or inquiry here"
+                        aria-label="Textarea for question or inquiry" required minlength="15"></textarea>
+                </div>
+                <!-- Submit button -->
+                <button type="submit" class="btn">Submit Form</button>
+            </form>
             <!-- Start of carousel div -->
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <!-- Div for the carousel indicators -->
