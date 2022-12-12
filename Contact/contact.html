@@ -57,7 +57,7 @@
         </div>
         <!-- Fluid container - meaning 100% width at all breakpoints -->
         <div class="container-fluid">
-            <!-- Start of form element -->
+                    <!-- Start of form element -->
             <form action="">
                 <!-- Div for e-mail input -->
                 <div class="input-group mb-4">
@@ -86,6 +86,46 @@
                 <!-- Submit button -->
                 <button type="submit" class="btn">Submit Form</button>
             </form>
+            <!-- Start of carousel div -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <!-- Div for the carousel indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1" id="indicatorOne"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2" id="indicatorTwo"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3" id="indicatorThree"></button>
+                </div>
+                <div class="carousel-inner">
+                    <!-- First image carousel item (active) -->
+                    <div class="carousel-item active">
+                        <img src="/Images/ContactImages/ContactUs.avif" class="d-block w-100 img-fluid"
+                            alt="Contact us scrabble">
+                    </div>
+                    <!-- Second image carousel item -->
+                    <div class="carousel-item">
+                        <img src="/Images/ContactImages/Phone.avif" class="d-block w-100 img-fluid" alt="Classic phone">
+                    </div>
+                    <!-- Third image carousel item -->
+                    <div class="carousel-item">
+                        <img src="/Images/ContactImages/Smartphone.avif" class="d-block w-100 img-fluid"
+                            alt="Smartphone in hand">
+                    </div>
+                </div>
+                <!-- Two buttons for the previous and next arrows -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <!-- End of carousel div -->
+            </div>
             <!-- End of fluid container div -->
         </div>
     </main>
