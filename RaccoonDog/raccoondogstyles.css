@@ -1,0 +1,253 @@
+body {
+    background-color: #E7ECEF;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ID for the main header that contains the h1 heading text. */
+#header {
+    width: auto;
+    text-align: center;
+    padding: 1.6%;
+    font-size: 130%;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+    font-family: Quicksand, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ID for the introductory paragraph. */
+#introParagraph {
+    margin-top: 3%;
+    text-align: center;
+    font-size: 150%;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #c4c2c2;
+    font-weight: 500;
+}
+
+/* ID to override/customize bootstrap navbar properties */
+#myNavbar {
+    background-color: #bababa;
+    font-weight: bold;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+/* ID for the navbar image (a winter fox) */
+#myNavbarImage {
+    display: inline-block;
+    width: 6rem;
+    height: 4rem;
+    border-radius: 0.4rem;
+}
+
+/* When hovering over the active navbar link */
+.nav-link.active:hover {
+    background-color: #6dc6de;
+    color: black;
+    transition: all 0.2s 0.2s;
+    transition-timing-function: ease-in-out;
+    border-radius: 0.7rem;
+}
+
+/* IDs for each of the cards. */
+#myCard1 {
+    text-align: center;
+    border: 0.17rem solid black;
+}
+
+#myCard2 {
+    text-align: center;
+    border: 0.17rem solid black;
+}
+
+/* Class for footer and two IDs for the footer. */
+.footer {
+    width: 100%;
+    padding: 0.7%;
+    margin-bottom: 0em;
+    margin-top: 10%;
+    float: right;
+    background-color: #bababa;
+    color: #2f2f2f;
+    font-weight: 500;
+}
+
+/* Media Query for under 768px */
+@media only screen and (max-width: 768px) {
+    #myNavbarImage {
+        width: 4.5rem;
+        height: 3rem;
+    }
+
+    .nav-link {
+        padding-left: 0.5rem;
+    }
+
+    .card {
+        margin-left: 1.4rem;
+        margin-right: 1.4rem;
+    }
+
+    .btn {
+        font-size: 90%;
+    }
+
+    #myCard1 {
+        margin-top: 0.5rem;
+    }
+}
+
+/* Media Query for under 576px */
+@media only screen and (max-width: 576px) {
+
+    .btn {
+        font-size: 75%;
+    }
+
+    #introParagraph {
+        font-size: 95%;
+    }
+
+    .card-title {
+        font-size: 98%;
+    }
+
+    .card-text {
+        font-size: 88%;
+    }
+
+    .footer {
+        font-size: 80%;
+    }
+}
+
+/* Media Query for over 768px */
+@media only screen and (min-width: 768px) {
+    #myCard1 {
+        margin-top: 0.8rem;
+    }
+
+    #myCard2 {
+        margin-top: 0.8rem;
+    }
+
+    .footer {
+        margin-top: 5rem;
+    }
+}
+
+/* Media Query for over 992px */
+@media only screen and (min-width: 992px) {
+    .card-title {
+        font-size: 170%;
+    }
+
+    .nav-link {
+        font-size: 115%;
+    }
+
+    #introParagraph {
+        margin-top: 1.5rem;
+    }
+
+    .footer {
+        font-size: 110%;
+    }
+
+    .btn {
+        font-size: 110%;
+    }
+
+    #myCard1 {
+        border: 0.2em solid black;
+    }
+
+    #myCard2 {
+        border: 0.2em solid black;
+    }
+
+}
+
+/* Class for the navbar links */
+.nav-link {
+    border-radius: 0.7rem;
+}
+
+/* When hovering over the navbar links. */
+.nav-link:hover {
+    background-color: #274C77;
+    color: #ffffff;
+    transition: all 0.2s 0.2s;
+    transition-timing-function: ease-in-out;
+    border-radius: 0.7rem;
+}
+
+#footerFloatLeft {
+    float: left;
+    margin-left: 1%;
+}
+
+#footerFloatRight {
+    float: right;
+    margin-right: 1%;
+}
+
+/* Class for all of the cards */
+.card {
+    border-radius: 0.6rem;
+    background-color: #4874ab;
+    color: #ffffff
+}
+
+/* Overriding bootstrap's btn properties */
+.btn {
+    background-color: #64bab3;
+    color: #ffffff;
+    border-radius: 0.8rem;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+    font-weight: 500;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+}
+
+/* When hovering over buttons */
+.btn:hover {
+    background-color: #274C77;
+    transition: all 0.3s 0.1s;
+    transition-timing-function: ease-in-out;
+    color: #e1e1e1;
+    box-shadow: 0 0.5em 0.5em -0.3em #95c5ff;
+    transform: translateY(-0.25em);
+}
+
+/* Class for the unordered list in the left card */
+.list-group {
+    border-radius: 1rem;
+}
+
+/* Class targeting the last list item */
+.list-group-item:last-of-type {
+    margin-bottom: 1.4rem;
+}
+
+/* Class targeting the last card text which is in the right card */
+.card-text:last-of-type {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 1rem;
+    margin-bottom: 1.4rem;
+    font-size: 105%;
+    padding: 0.6rem;
+}
+
+/* Class to style some of the text in the left card */
+.boldText {
+    font-weight: 700;
+}
+
+/* Class for title inside the cards */
+.card-title {
+    margin-bottom: 0.8rem;
+}
